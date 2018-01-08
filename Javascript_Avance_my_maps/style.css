@@ -1,0 +1,48 @@
+   #map {
+   	height: 600px;
+   	width: 800px;
+   	float:right;
+   	margin-top: 100px;
+	margin-right: 50px;
+	border: solid 40px burlywood;
+   }
+   #floating-panel {
+   	top: 10px;
+   	left: 25%;
+   	z-index: 5;
+   	background-color: #fff;
+   	padding: 5px;
+   	border: 1px solid #999;
+   	text-align: center;
+   	font-family: 'Roboto','sans-serif';
+   	line-height: 30px;
+   	padding-left: 10px;
+   	display: table-caption;
+   	position:fixed;
+   }
+   #local{
+   	width:15px;
+   }
+   body{
+   	background: url(https://ardec.ca/media/img/catalog/options/210.jpg);
+   }
+
+.adp{
+	float:left;
+	width: 30%;
+}
+h1{
+	font-family: 'Tangerine', serif;
+	font-size: 4rem;
+}
+#box {
+    width: 200px;
+    height: 200px;
+ 
+}
+#box{
+display: initial;
+
+}
+
+   

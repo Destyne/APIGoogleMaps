@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Tangerine">
+
+</head>
+<body>
+  <div id="container">
+    <h1> Google Maps </h1>
+    <div id="panel"></div>
+    <div id="map">
+      <p>Veuillez patienter pendant le chargement de la carte...</p>
+    </div>
+  </div>
+
+  <div id="panel"></div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <div id="floating-panel">
+    <b>Mode of Travel: </b>
+    <select id="mode">
+      <option value="DRIVING">Driving</option>
+      <option value="WALKING">Walking</option>
+      <option value="BICYCLING">Bicycling</option>
+      <option value="TRANSIT">Transit</option>
+    </select>
+    <select id="interest">
+          <option value="true">Sans musées</option>
+          <option value="false">Avec musées</option>
+        </select> 
+    <div id="destinationForm">
+      <form action="" method="get" name="direction" id="direction">
+        <label>Point de départ :</label>
+        <img id="local" src="http://www.icone-png.com/png/33/33217.png" >
+        <input type="text" name="origin" id="origin">
+        <label>Destination :</label>
+        <input type="text" name="destination" id="destination">
+        <select id="bool">
+          <option value="true">Sans péages</option>
+          <option value="false">Avec péages</option>
+        </select> 
+        <input type="button" value="Calculer l'itinéraire" onclick="javascript:calculate()">
+
+      </form>
+    </div>
+  </div>
+  <div id="box"> <h2> Changer le théme de votre carte</h2>
+    <button id="night">Mode de nuit</button>
+    <button id="light">Mode ultra light</button>
+    <button id="silver">Mode silver</button>
+    <button id="normal">Mode normal</button>
+  </div>
+  <script src="script.js"></script>
+ <script async defer src="https://maps.googleapis.com/maps/api/js?key= AIzaSyCM6p5FziakXwm5qeTsar5lL721XQzDT1M&libraries=places&callback=initMap&language=fr">
+ </script>
+</body>
+</html>
